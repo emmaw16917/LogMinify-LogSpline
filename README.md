@@ -1,14 +1,6 @@
 # LogMinify
 
-LogMinify is a lossless log compressor for block-parallel ingestion. Each block is
-parsed into residual templates and typed variables. Variables are encoded within the
-block, while residual templates are deduplicated through one global dictionary backed
-by RSSPDC, a concurrent radix string spline with native inserts. The dictionary is
-serialized once at the end (front-coded templates and delta-coded IDs), so the block
-archives plus that dictionary are a self-contained compressed log.
-
-This repository contains the single configuration evaluated in the paper: context
-grouping on, a global RSSPDC template dictionary, and the lock-free decompressor.
+LogMinify is a lossless, parsing-free log compressor targeted at log streams. Specifically, it establishes a global dictionary across log blocks to eliminate the cross-block repetition with a learned index, LogSpline, to accelerate dictionary updates. 
 
 ## Requirements
 
