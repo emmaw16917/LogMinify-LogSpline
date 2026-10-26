@@ -1,6 +1,6 @@
 # Third-party notices
 
-## third_party/rsspdc/rs
+## logspline/rs
 
 The headers `builder.h`, `common.h`, and `radix_spline.h` are taken from the
 RadixStringSpline reimplementation in

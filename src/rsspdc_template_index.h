@@ -1,6 +1,6 @@
 // RSSPDC as LogMinify's global template dictionary: a radix string spline on
-// discriminative bytes with native concurrent inserts (third_party/rsspdc, see its
-// README). It maps each template's key to the template's ID.
+// discriminative bytes with native concurrent inserts (logspline/, see its README).
+// It maps each template's key to the template's ID.
 //
 // - A template with NUL or 0x01 bytes is escaped (escape_nul in dict_dump_format.h);
 //   keys keep the templates' byte order. RSSPDC reads past a key's end as 0, so a

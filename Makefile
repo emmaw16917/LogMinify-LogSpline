@@ -1,6 +1,6 @@
 CXX ?= g++
 CXXFLAGS ?= -O3 -std=c++17 -march=native -faligned-new -pthread \
-             -DPCRE2_CODE_UNIT_WIDTH=8 -Isrc -Ithird_party/rsspdc
+             -DPCRE2_CODE_UNIT_WIDTH=8 -Isrc -Ilogspline
 LDLIBS = -lpcre2-8 -ljemalloc -pthread
 
 all: logminify decompress_logminify

@@ -91,5 +91,5 @@ python3 scripts/verify_roundtrip.py Linux
 
 ## License
 
-MIT; see `LICENSE`. The headers under `third_party/rsspdc/rs` derive from RadixSpline
+MIT; see `LICENSE`. The headers under `logspline/rs` derive from RadixSpline
 (MIT); see `THIRD_PARTY_NOTICES.md`.
