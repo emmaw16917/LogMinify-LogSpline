@@ -234,8 +234,7 @@ public:
 
         const std::string alpha = "abcdefghijklmnopqrstuvwxyz";
         const auto &substitutions = regex_map[logname].substitutions;
-        static const bool ts_on = [] { const char *e = std::getenv("LOGMINIFY_TS"); return e == nullptr || std::strcmp(e, "0") != 0; }();
-        const TsSpecs ts = ts_on ? ts_specs_for(logname) : TsSpecs{};  // LOGMINIFY_TS=0: no timestamp columns
+        const TsSpecs ts = ts_specs_for(logname);  // timestamp columns
         std::vector<std::vector<int64_t> *> ts_nums(ts.n, nullptr);
 
         NumSlots num_slots{};

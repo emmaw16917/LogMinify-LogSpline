@@ -40,7 +40,6 @@ The second argument is the block size in lines (100000 in the paper's experiment
 | --- | --- | --- |
 | `LOGMINIFY_FG_THREADS` | hardware concurrency | number of blocks compressed in parallel |
 | `LOGMINIFY_COMPRESS` | `lzma -6` | backend compressor for the block and dictionary archives, e.g. `gzip -6`, `bzip2 -3`, `lzma -9` |
-| `LOGMINIFY_TS` | `1` | set to `0` to disable the timestamp columns (ablation) |
 
 Outputs under `output/<name>/`:
 
